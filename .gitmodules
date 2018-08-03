@@ -1,4 +1,4 @@
 [submodule "zcash"]
 	path = zcash
-	url = https://github.com/sebastianst/python-zcashlib.git
+	url = https://github.com/ByeBugDevelopment/python-zcashlib.git
 	fetchRecurseSubmodules = true

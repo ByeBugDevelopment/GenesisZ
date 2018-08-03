@@ -4,3 +4,4 @@
 /pip-selfcheck.json
 /tags
 __pycache__
+!__init__.py
