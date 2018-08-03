@@ -12,7 +12,7 @@ Inspired by [GenesisH0](https://github.com/lhartikk/GenesisH0), but written from
 ## Getting started
 Clone this repo, create a **python 3** virtualenv and install dependencies with pip:
 ```bash
-git clone --recursive https://github.com/sebastianst/GenesisZ
+git clone --recursive https://github.com/ByeBugDevelopment/GenesisZ.git
 python3 -m venv GenesisZ
 cd GenesisZ
 source bin/activate
