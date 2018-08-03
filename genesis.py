@@ -108,17 +108,17 @@ def parse_args():
     parser.add_argument("-r", "--rounds", dest="rounds", default=1,
             type=int, help="how many nonces to check at most")
     parser.add_argument("-s", "--solver", dest="solver",
-            type=split, default=split("../equihash/equi"),
+            type=split, default=split("../equihash/eq14451"),
             help="""path to solver binary. Currently supported are silentarmy
-            (sa-solver) and Tromp (equi/equi485). Command line arguments may be
+            (sa-solver) and Tromp (equi/eq14451). Command line arguments may be
             passed, although that should be unnecessary.""")
     parser.add_argument("-S", "--solver-type", dest="solver_type",
-            default=None,
+            default="tromp",
             choices=["tromp", "silentarmy"],
             help="""Set the type of solver explicitly.
             Otherwise GenesisZ tries to infer the type from the binary name
             (equi* -> tromp, sa-solver -> silentarmy)""")
-    parser.add_argument("-T", "--threads", dest="threads", default=1,
+    parser.add_argument("-T", "--threads", dest="threads", default=8,
             type=int, help="How many CPU threads to use when solving with Tromp.")
     parser.add_argument("-v", "--verbose",
             dest="verbose", action="store_true",

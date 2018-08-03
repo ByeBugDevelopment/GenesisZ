@@ -119,7 +119,8 @@ class TrompSolver(Solver):
                 '-n', str(uint256_from_str(self.start_nonce)),
                 '-r', str(self.rounds),
                 '-t', str(self.threads),
-                '-x', b2x(self.header.serialize())]
+                '-x', b2x(self.header.serialize()),
+                '-p', 'AnonyPoW']
 
     async def eat_banner(self):
         banner = []
